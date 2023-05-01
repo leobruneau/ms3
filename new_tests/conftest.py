@@ -29,6 +29,16 @@ def directory():
     assert repo.git.diff() == ''
     return path
 
+@pytest.fixture(scope="session")
+def mozart_piano_sonatas() -> str:
+    """Get the path to local clone of DCMLab/mozart_piano_sonatas"""
+    path = os.path.join(os.path.expanduser(CORPUS_DIR), "mozart_piano_sonatas")
+    if not os.path.isdir(path):
+        print(f"Directory does not exist: {path} Clone DCMLab/mozart_piano_sonatas into the CORPUS_DIR specified above.")
+    assert os.path.isdir(path)
+    assert Repo(path) # this makes sure it's a Git
+    return path
+
 @pytest.fixture(
     scope="session",
     params=[

@@ -1,5 +1,34 @@
 # Changelog
 
+## [2.6.0](https://github.com/leobruneau/ms3/compare/v2.5.3...v2.6.0) (2024-12-11)
+
+
+### Features
+
+* adds helper function write_soup_to_mscx_file() ([48fa73c](https://github.com/leobruneau/ms3/commit/48fa73cd6e0a0fa5c57741c603a9781a15b0adac))
+
+
+### Bug Fixes
+
+* creates the reviewed folder if necessary ([46a62e2](https://github.com/leobruneau/ms3/commit/46a62e27221e0863158a002f653f8ef6f20cd47e))
+* enables ignoring the COMPETING_MEASURE_INFO_WARNING ([5c727dd](https://github.com/leobruneau/ms3/commit/5c727ddb652f5b2a0f6739663cdcd61b9f6801a4))
+* fixes bug when creating an excerpt containing an incomplete volta ([86c5a6b](https://github.com/leobruneau/ms3/commit/86c5a6bb795440f05d3e7cb094a5b4e09debddd8))
+* for scores that encode multiple parts, take into account only the main score ([6115ea6](https://github.com/leobruneau/ms3/commit/6115ea67ab47fa37cfd6d251830d4adac35b3daa))
+* hardcodes CSS_COLORS rather than creating it from a webcolors constant (fixes [#115](https://github.com/leobruneau/ms3/issues/115)) ([b680f45](https://github.com/leobruneau/ms3/commit/b680f452e77d421f4b8124d46ad6f1b5ee15d7a3))
+* makes utility functions more robust against missing data ([f408de3](https://github.com/leobruneau/ms3/commit/f408de319177a62aeff2a77c9fec95d807429682))
+* pins numpy&lt;2.0.0 ([b75e671](https://github.com/leobruneau/ms3/commit/b75e67104d1ac0e0d8118b04696cf92acc96593d))
+* replaces webcolors constant with the local one introduced in b680f452 ([06dad93](https://github.com/leobruneau/ms3/commit/06dad933ceaba08aa49c5181b1024103c4749a3c))
+* resolves [#112](https://github.com/leobruneau/ms3/issues/112) ([2f03b79](https://github.com/leobruneau/ms3/commit/2f03b79efad442efeaaeb25baee92c4f0a9542ea))
+* update syntax of inplace operations ([b34a323](https://github.com/leobruneau/ms3/commit/b34a323b63d8432850d67122200c7814aeb19a01))
+
+
+### Documentation
+
+* converts CHANGELOG rst =&gt; md and adds the release-please workflow ([04e26cb](https://github.com/leobruneau/ms3/commit/04e26cbfd8f93313fd57720efe7b5851e625846f))
+* updates changelog ([70fd82e](https://github.com/leobruneau/ms3/commit/70fd82ec744e13d2b718f3d637b5fac44eaf9115))
+* updates changelog ([306cea7](https://github.com/leobruneau/ms3/commit/306cea7ea85d850a7bd2c3a398826a7b8d8bc7e4))
+* updates CONTRIBUTING.rst ([4689897](https://github.com/leobruneau/ms3/commit/4689897ce5c32f5775fc1a8f60961a31349b8682))
+
 ## [2.5.3](https://github.com/johentsch/ms3/compare/v2.5.2...v2.5.3) (2024-09-26)
 
 
